@@ -1,4 +1,4 @@
-## Trabajo 3 Ténicas de Aprendizaje Estadístico
+## Introducción 
 
 You can use the [editor on GitHub](https://github.com/aljeandro/trabajo3-TAE/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
