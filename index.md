@@ -16,11 +16,11 @@ Cada una de las imágenes está nombrada siguiendo la siguiente convención:
   
   - (id_usuario): Corresponde a la identificación de la persona en la imagen, este campo tiene 20 valores en total: an2i, at33, boland, bpm, ch4f, cheyer, choon, danieln, glickman, karyadi, kawamura, kk49, megak, mitchell, night, phoebe, saavik, steffi, sz24, y tammo.
   
-  - <pose>: Es la posición de la cabeza de la persona, este campo puede contener 4 valores: straight (derecho), left (izquierda), right (derecha), up (arriba).
+  - (pose): Es la posición de la cabeza de la persona, este campo puede contener 4 valores: straight (derecho), left (izquierda), right (derecha), up (arriba).
   
-  - <expresión>: Es la expresión facial de la persona, este campo puede contener 4 valores:  neutral (neutro), happy (feliz), sad (triste), angry (enojado).
+  - (expresión): Es la expresión facial de la persona, este campo puede contener 4 valores:  neutral (neutro), happy (feliz), sad (triste), angry (enojado).
   
-  - <ojos> es el estado de los ojos de la persona, este campo puede tener dos valores: open (sin gafas), sunglasses (con gafas de sol).
+  - (ojos): es el estado de los ojos de la persona, este campo puede tener dos valores: open (sin gafas), sunglasses (con gafas de sol).
 
   ### Preprocesamiento de las imágenes
   
