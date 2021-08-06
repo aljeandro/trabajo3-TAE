@@ -1,5 +1,13 @@
 ## Introducción 
 
+En el área de la inteligencia artificial y la estadística los problemas de clasificación son muy comúnes, incluso más que los de regresión. En estos se busca determinar a qué clase o categoría pertenece un individuo dadas ciertas características de este.
+
+
+
+
+
+
+
 You can use the [editor on GitHub](https://github.com/aljeandro/trabajo3-TAE/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
