@@ -1,4 +1,4 @@
-## Introducción 
+## **Introducción** 
 
 En el área de la inteligencia artificial y la estadística los problemas de clasificación son muy comúnes, incluso más que los de regresión. En estos se busca determinar a qué clase o categoría pertenece un individuo dadas ciertas características de este.
 
@@ -6,7 +6,7 @@ A menudo los individuos que requieren ser clasificados son imágenes; por ejempl
 
 ## Planteamiento del problema
 
-### Descripción del conjunto de datos
+### **Descripción del conjunto de datos**
 
 En este proyecto se lleva a cabo la clasificación de personas que están usando o no gafas de sol; para ello, se utiliza el conjunto de datos llamado *CMU Face Images Data Set*, el cual contiene 640 imágenes cuyo tamaño es de 120 filas por 128 columnas; además, dichas imágenes se encuentran en escala de grises.
 
@@ -23,6 +23,11 @@ Cada una de las imágenes está nombrada siguiendo la siguiente convención:
   - (ojos): es el estado de los ojos de la persona, este campo puede tener dos valores: open (sin gafas), sunglasses (con gafas de sol).
 
   ### Preprocesamiento de las imágenes
+  
+  Como se mencionó anteriormente, todas las imágenes están en escala de grises, eso quiere decir que en su representación como matriz, en los 3 canales (R, G, B) tendrán el mismo valor, por lo tanto, para evitar la redundancia de información y para optimizar el modelo, solamente se tomará la información de uno de los canales.
+  
+  
+  
   
   
 
