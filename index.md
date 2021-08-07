@@ -47,7 +47,7 @@ En este trabajo se probaron dos tipos distintos de modelos de clasificación, co
 
 La regresión logística (ver Figura 1) es un modelo que permite hacer predicciones desde una perspectiva probabilística, es decir, la respuesta siempre estará dada por un número entre 0 y 1, lo cual resulta útil para hacer clasificaciones. Sin embargo, su desempeño es alto solo si las dos clases o categorías de clasificación están separadas por un hiperplano, debido a su naturaleza lineal.
 
-![image](/images/ec2.jpg)         
+![image](/images/ec4.jpg)         
   Figura 1. Regresión Logística.
 
 
