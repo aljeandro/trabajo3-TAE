@@ -24,7 +24,7 @@ Cada una de las imágenes está nombrada siguiendo la siguiente convención:
 
 A continuación, veamos algunas imágenes del conjunto de datos:
 
-![image](/images/an2i_straight_neutral_sunglasses.png)
+![image](/images/an2i_straight_neutral_sunglasses.png) ![image](/images/an2i_straight_sad_open.png) 
 
 ### **Preprocesamiento de las imágenes** 
 
