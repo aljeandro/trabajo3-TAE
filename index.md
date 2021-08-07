@@ -6,7 +6,7 @@ A menudo los individuos que requieren ser clasificados son imágenes; por ejempl
 
 ## **Planteamiento del problema**
 
-### Descripción del conjunto de datos
+### Descripción del Conjunto de Datos
 
 En este proyecto se lleva a cabo la clasificación de personas que están usando o no gafas de sol; para ello, se utiliza el conjunto de datos llamado *CMU Face Images Data Set*, el cual contiene 640 imágenes cuyo tamaño es de 120 filas por 128 columnas; además, dichas imágenes se encuentran en escala de grises.
 
@@ -26,7 +26,7 @@ A continuación, veamos algunas imágenes del conjunto de datos:
 
 ![image](/images/an2i_straight_neutral_sunglasses.png) ![image](/images/an2i_straight_sad_open.png) ![image](/images/bpm_right_angry_open.png) ![image](/images/bpm_right_angry_sunglasses.png) 
 
-### Preprocesamiento de las imágenes
+### Preprocesamiento de las Imágenes
 
 Debido a un error en la cámara con la que se tomaron las fotografías, 12 de las imágenes se dañaron, por tanto, estas serán borradas manualmente.
   
@@ -39,8 +39,16 @@ Por otro lado, al ser aprendizaje supervisado, es necesario obtener un vector co
   
   Por último, se normalizan las imágenes, dividiendo cada entrada de cada imagen entre la norma euclidiana de sus componentes.
 
+## Elección y Configuración del Modelo
 
+En este trabajo se probaron dos tipos distintos de modelos de clasificación, con el fin de determinar cuál de los dos ofrece un mejor desempeño:
 
+### 1. Regresión Logística
+
+La regresión logística es un modelo que permite hacer predicciones desde una perspectiva probabilística, es decir, la respuesta siempre estará dada por un número entre 0 y 1, lo cual resulta útil para hacer clasificaciones.
+
+![image](/images/ec1.jpg)         
+  Figura 1
 
 
 
