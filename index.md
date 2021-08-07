@@ -56,8 +56,31 @@ En este problema en específico, el vector X corresponde a la imagen, p es el n�
 
 Para el entrenamiento de este modelo, el conjunto de datos fue dividido en tres partes así:
 
-- Entrenamiento: este conjunto se utiliza para enseñarle al modelo a hacer las predicciones, para ello se destina el 80 %, es decir, 502 imágenes.
-- Test: Este conjunto se utiliza para conocer el desempeño real que tiene el modelo, para ello se destina el 20 %, es decir, 126 imágenes.
+- **Entrenamiento**: este conjunto se utiliza para enseñarle al modelo a hacer las predicciones, para ello se destina el 80 %, es decir, 502 imágenes.
+- **Test**: Este conjunto se utiliza para conocer el desempeño real que tiene el modelo, para ello se destina el 20 %, es decir, 126 imágenes.
+
+### 2. Perceptron Multicapa
+
+El perceptrón multicapa es una red neuronal artificial formada por múltiples capas, de tal manera que tiene la capacidad para resolver problemas que no son linealmente separables [1].
+
+El perceptron multicapa tiene 3 tipos de capas:
+
+- Capa de entrada: Constituida por aquellas neuronas que introducen los patrones de entrada en la red. En estas neuronas no se produce procesamiento [1].
+- Capas ocultas: Formada por aquellas neuronas cuyas entradas provienen de capas anteriores y cuyas salidas pasan a neuronas de capas posteriores [1].
+- Capa de salida: Neuronas cuyos valores de salida se corresponden con las salidas de toda la red [1].
+
+![image](/images/RedNeuronalArtificial.png)
+Figura 2. Perceotrón Multicapa [1].
+
+En este caso, el perceptrón multicapa se construyo con la siguiente arquitectura:
+
+- **Capa de entrada**: por medio de esta se ingresa la información de la imagen, por tanto, está constituida por 15360 neuronas (120 * 128 tomando un solo canal).
+- **Capas ocultas**: mediante un ejercicio de ensayo y error, se logró determinar que 2 capas ocultas mostraban un buen desempeño; la primera capa oculta contiene 20 neuronas, y la segunda contiene 5.
+- **Capa de salida**: Dado que nos encontramos en un problema de clasificación binaria, la capa de salida únicamente tiene 1 neurona.
+
+## **Referencias**
+
+[1] Colaboradores de los proyectos Wikimedia. "Perceptrón multicapa - Wikipedia, la enciclopedia libre". Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Perceptrón_multicapa (accedido el 7 de agosto de 2021).
 
 
 
