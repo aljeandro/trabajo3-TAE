@@ -22,6 +22,10 @@ Cada una de las imágenes está nombrada siguiendo la siguiente convención:
   
   - (ojos): es el estado de los ojos de la persona, este campo puede tener dos valores: open (sin gafas), sunglasses (con gafas de sol).
 
+A continuación, veamos algunas imágenes del conjunto de datos:
+
+![image](/images/an2i_straight_neutral_sunglasses.png)
+
 ### **Preprocesamiento de las imágenes** 
 
 Debido a un error en la cámara con la que se tomaron las fotografías, 12 de las imágenes se dañaron, por tanto, estas serán borradas manualmente.
