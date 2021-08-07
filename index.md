@@ -54,6 +54,11 @@ La regresión logística (ver Figura 1) es un modelo que permite hacer prediccio
 
 En este problema en específico, el vector X corresponde a la imagen, p es el número de pixeles, es decir 15360 (120 * 128 tomando un solo canal), y Y es la variable respuesta.
 
+Para el entrenamiento de este modelo, el conjunto de datos fue dividido en tres partes así:
+
+- Entrenamiento: este conjunto se utiliza para enseñarle al modelo a hacer las predicciones, para ello se destina el 80 %, es decir, 502 imágenes.
+- Test: Este conjunto se utiliza para conocer el desempeño real que tiene el modelo, para ello se destina el 20 %, es decir, 126 imágenes.
+
 
 
 
