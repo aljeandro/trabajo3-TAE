@@ -54,7 +54,7 @@ La regresión logística (ver Figura 1) es un modelo que permite hacer prediccio
 
 En este problema en específico, el vector X corresponde a la imagen, p es el número de pixeles, es decir 15360 (120 * 128 tomando un solo canal), y Y es la variable respuesta.
 
-Para el entrenamiento de este modelo, el conjunto de datos fue dividido en tres partes así:
+Para el entrenamiento de este modelo, el conjunto de datos fue dividido en dos partes así:
 
 - **Entrenamiento**: este conjunto se utiliza para enseñarle al modelo a hacer las predicciones, para ello se destina el 80 %, es decir, 502 imágenes.
 - **Test**: Este conjunto se utiliza para conocer el desempeño real que tiene el modelo, para ello se destina el 20 %, es decir, 126 imágenes.
@@ -70,13 +70,22 @@ El perceptron multicapa tiene 3 tipos de capas:
 - Capa de salida: Neuronas cuyos valores de salida se corresponden con las salidas de toda la red [1].
 
 ![image](/images/RedNeuronalArtificial.png)
+
 Figura 2. Perceotrón Multicapa [1].
 
-En este caso, el perceptrón multicapa se construyo con la siguiente arquitectura:
+En este caso, el perceptrón multicapa se construyó con la siguiente arquitectura:
 
 - **Capa de entrada**: por medio de esta se ingresa la información de la imagen, por tanto, está constituida por 15360 neuronas (120 * 128 tomando un solo canal).
 - **Capas ocultas**: mediante un ejercicio de ensayo y error, se logró determinar que 2 capas ocultas mostraban un buen desempeño; la primera capa oculta contiene 20 neuronas, y la segunda contiene 5.
 - **Capa de salida**: Dado que nos encontramos en un problema de clasificación binaria, la capa de salida únicamente tiene 1 neurona.
+
+Para el entrenamiento de este modelo, el conjunto de datos fue dividido en dos partes así:
+
+- **Entrenamiento**: se destinó el 60 %, es decir, 376 imágenes.
+- **Validación**: este conjunto se utilizó para reajustar los hiperparámetros y para hacer la interrupción anticipada del entrenamiento, con el fin de evitar el sobreajuste; para ello se destinó el 20 % de las imágenes, es decir, 126 imágenes.
+- **Test**: se destinó el 20 %, es decir, 126 imágenes.
+
+
 
 ## **Referencias**
 
