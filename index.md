@@ -6,6 +6,8 @@ A menudo los individuos que requieren ser clasificados son imágenes; por ejempl
 
 ## **Planteamiento del problema**
 
+**Objetivo:** construir y validar un modelo de aprendizaje estadístico para clasificar imágenes de sujetos con gafas de sol del conjunto de datos *CMU Face Images Data Set*.
+
 ### Descripción del Conjunto de Datos
 
 En este proyecto se lleva a cabo la clasificación de personas que están usando o no gafas de sol; para ello, se utiliza el conjunto de datos llamado *CMU Face Images Data Set*, el cual contiene 640 imágenes cuyo tamaño es de 120 filas por 128 columnas; además, dichas imágenes se encuentran en escala de grises.
@@ -50,7 +52,7 @@ La regresión logística (ver Figura 1) es un modelo que permite hacer prediccio
 ![image](/images/ec4.jpg)         
   Figura 1. Regresión Logística.
 
-
+En este problema en específico, el vector X corresponde a la imagen, p es el número de pixeles, es decir 15360 (120 * 128 tomando un solo canal), y Y es la variable respuesta.
 
 
 
