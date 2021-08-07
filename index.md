@@ -4,9 +4,9 @@ En el área de la inteligencia artificial y la estadística los problemas de cla
 
 A menudo los individuos que requieren ser clasificados son imágenes; por ejemplo, en el área de la agronomía resulta útil saber si un fruto esta maduro o no, o, en el contexto de la pandemia del covid-19, podría ser de mucha ayuda reconocer cuándo una persona no está utilizando tapabocas por medio de una cámara de seguridad, todo esto sin la supervisión permanente de un humano.
 
-## Planteamiento del problema
+## **Planteamiento del problema**
 
-### **Descripción del conjunto de datos**
+### Descripción del conjunto de datos
 
 En este proyecto se lleva a cabo la clasificación de personas que están usando o no gafas de sol; para ello, se utiliza el conjunto de datos llamado *CMU Face Images Data Set*, el cual contiene 640 imágenes cuyo tamaño es de 120 filas por 128 columnas; además, dichas imágenes se encuentran en escala de grises.
 
@@ -26,7 +26,7 @@ A continuación, veamos algunas imágenes del conjunto de datos:
 
 ![image](/images/an2i_straight_neutral_sunglasses.png) ![image](/images/an2i_straight_sad_open.png) ![image](/images/bpm_right_angry_open.png) ![image](/images/bpm_right_angry_sunglasses.png) 
 
-### **Preprocesamiento de las imágenes** 
+### Preprocesamiento de las imágenes
 
 Debido a un error en la cámara con la que se tomaron las fotografías, 12 de las imágenes se dañaron, por tanto, estas serán borradas manualmente.
   
@@ -37,7 +37,22 @@ Posteriormente, la matriz que representa a cada imagen se "aplana" con el fin de
 Por otro lado, al ser aprendizaje supervisado, es necesario obtener un vector con la variable respuesta, para ello se utiliza la información contenida en el nombre de cada imagen, así que si el nombre de la imagen contiene la palabra *sunglasses*, entonces su respectiva etiqueta será 1, de lo contrario será 0.
   
   
-  
+  Por último, se normalizan las imágenes, dividiendo cada entrada de cada imagen entre la norma euclidiana de sus componentes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
