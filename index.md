@@ -95,11 +95,13 @@ Para el entrenamiento de este modelo, el conjunto de datos fue dividido en dos p
 Para medir el desempeño de este modelo, se utilizó la métrica F1score que se calcula como se muestra en la figura 3:
 
 ![image](/images/ec5.jpg)
+
 Figura 3. F1score.
 
 Donde:
 
 - **Precision** (Precisión): es la razón entre los elementos que el modelo etiquetó como positivos y que en realidad lo eran, y todos los elementos que el modelo marcó como positivos; es decir, en nuestro contexto, es el resultado de dividir la cantidad de sujetos que el modelo predijo que tenían gafas y que en realidad sí las tenían entre todos los sujetos que el modelo predijo que tenían gafas (es decir,  los que etiquetó que tenían gafas y en relidad sí las tenían más los que etiquetó que tenían gafas que en realidad no las tenían); en otras palabras, dice qué tan bueno es el modelo para detectar a los sujetos que en realidad sí tienen gafas de sol sin confundirlos con aquellos que en realidad no tienen.
+
 - **Recall** (Sensibilidad): es la razón entre los elementos que el modelo  etiquetó como positivos y que en realidad lo eran, y todos los elementos positivos; es decir, en nuestro contexto, es el resultadode dividir la cantidad de sujetos que el modelo predijo que tenían gafas y que en realidad sí las tenían entre todos los sujetos que sí tenían gafas (es decir, los que etiquetó que tenían gafas y en relidad sí las tenían más los que etiquetó como que no tenían gafas pero que en realidad sí las tenían); en otras palabras, dice qué tan bueno es el modelo para detectar a los sujetos que sí tienen gafas de sol de entre todos los que en realidad sí las estaban usando.
 
 
