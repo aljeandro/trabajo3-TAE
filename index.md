@@ -92,7 +92,7 @@ Para el entrenamiento de este modelo, el conjunto de datos fue dividido en dos p
 
 ### 1. Regresión Logística
 
-**F1score**
+- **F1score**
 
 Para medir el desempeño de este modelo, se utilizó la métrica F1score que se calcula como se muestra en la figura 3:
 
@@ -110,7 +110,7 @@ Donde:
 
 Este resultado nos muestra un desempeño aceptable, aunque con algunas falencias.
 
-**Matriz de Confusión**
+- **Matriz de Confusión**
 
 La matriz de confusión es una herramienta que nos ayuda a saber cómo está clasificando el modelo respecto a las diferentes clases o categorías de clasificación; más específicamente, no ayuda a saber si el modelo está confundiendo a una clase con otra.
 
@@ -122,7 +122,7 @@ Figura 4. Matriz de Confusión de la Regresión Logística.
 
 A partir de esta matriz, se puede decir que está clasificando relativamente bien a los sujetos que **no** están usando gafas de sol; sin embargo, está confundiendo a muchos sujetos (el 23 %) que usan gafas de sol con los que no las usan. Esto puede estar sucediendo debido a las diferentes posiciones de las cabezas de los sujetos, lo cual puede suponer una dificultad para el modelo.
 
-**¿Qué está aprendiendo el modelo?**
+- **¿Qué está aprendiendo el modelo?**
 
 Por medio de la figura 5 podemos ver gráficamente los coeficientes aprendidos por la regresión logística.
 
@@ -134,7 +134,7 @@ En esta imagen podemos ver claramente el contorno de los sujetos, además, en la
 
 ### 2. Perceptrón Multicapa
 
-**F1score**
+- **F1score**
 
 Al igual que con el modelo de Regresión Logística, con el Perceptrón Multicapa también se utilizó la métrica del F1score explicada anteriormente.
 
@@ -142,7 +142,7 @@ Al igual que con el modelo de Regresión Logística, con el Perceptrón Multicap
 
 Este resultado nos muestra un desempeño muy bueno, lo cual quiere decir que este modelo es tanto preciso como sensible, como se podrá comprobar en la matriz de confusión a continuación.
 
-**Matriz de Confusión**
+- **Matriz de Confusión**
 
 La matriz de confusión obtenida en el Perceptrón Multicapa se muestra en la figura 6.
 
