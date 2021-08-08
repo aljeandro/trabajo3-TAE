@@ -134,6 +134,30 @@ En esta imagen podemos ver claramente el contorno de los sujetos, además, en la
 
 ### 2. Perceptrón Multicapa
 
+**F1score**
+
+Al igual que con el modelo de Regresión Logística, con el Perceptrón Multicapa también se utilizó la métrica del F1score explicada anteriormente.
+
+**F1score Perceptrón Multicapa = 0.96**
+
+Este resultado nos muestra un desempeño muy bueno, lo cual quiere decir que este modelo es tanto preciso como sensible, como se podrá comprobar en la matriz de confusión a continuación.
+
+**Matriz de Confusión**
+
+La matriz de confusión obtenida en el Perceptrón Multicapa se muestra en la figura 6.
+
+![image](/images/Matriz2.jpg)
+
+Figura 6. Matriz de Confusión del Perceptrón Multicapa.
+
+A partir de esta matriz, se puede decir que está clasificando relativamente bien tanto a los sujetos que **sí** están usando gafas como a los que **no** lo hacen, ya que de aquellos sujetos que en realidad no usan gafas solo está clasificando a 3 de ellos incorrectamente (es decir, el 6 %); similarmente, de aquellos sujetos que sí utilizan gafas de sol solo está clasificando mal a 3 de ellos (es decir, el 4 %).
+
+## **Conclusiones**
+
+En el área de la inteligencia artifical existen muchos modelos diferentes que pueden ser aplicables a un mismo problema, y este no es la excepción. Por tanto, cuando se tiene este gran abanico de opciones, una de las habilidades más importantes del investigador es saber qué modelo se ajusta más a sus necesidades y saber, por supuesto, cómo configurar sus hiperparámetros para que su desempeño sea óptimo.
+
+Durante este informe se mostró el funcionamiento y desempeño de dos modelos de clasificación binaria. El primero de ellos, la Regresión Logística, aunque tenía un desempeño aceptable, se quedaba bastante atrás a comparación de su contraparte, el Perceptrón Multicapa. ¿Qué pudo estar sucediendo?, como se mencionó anteriormente, la Regresión Logística funciona muy bien cuando las categorías de clasificación están separadas por un hiperplano, lo cual puede significar una limitación para este problema, ya que, por otro lado, el Perceptrón Multicapa tiene una mayor flexibilidad, lo cual le permite resolver problemas que no son linealmente separables, que, en consecuencia, le podría estar significando esa diferencia en el desempeño.
+
 
 ## **Referencias**
 
