@@ -108,6 +108,8 @@ Donde:
 
 **F1score Regresión Logística = 0.78**
 
+Este resultado nos muestra un desempeño aceptable, aunque con algunas falencias.
+
 **Matriz de Confusión**
 
 La matriz de confusión es una herramienta que nos ayuda a saber cómo está clasificando el modelo respecto a las diferentes clases o categorías de clasificación; más específicamente, no ayuda a saber si el modelo está confundiendo a una clase con otra.
@@ -120,7 +122,7 @@ Figura 4. Matriz de Confusión de la Regresión Logística.
 
 A partir de esta matriz, se puede decir que está clasificando relativamente bien a los sujetos que **no** están usando gafas de sol; sin embargo, está confundiendo a muchos sujetos (el 23 %) que usan gafas de sol con los que no las usan. Esto puede estar sucediendo debido a las diferentes posiciones de las cabezas de los sujetos, lo cual puede suponer una dificultad para el modelo.
 
-**Qué está aprendiendo el modelo**
+**¿Qué está aprendiendo el modelo?**
 
 Por medio de la figura 5 podemos ver gráficamente los coeficientes aprendidos por la regresión logística.
 
@@ -129,6 +131,8 @@ Por medio de la figura 5 podemos ver gráficamente los coeficientes aprendidos p
 Figura 5. Coeficientes aprendidos por la Regresión Logística; colores más intensos representan coeficientes más grandes en magnitud, es decir, más importantes.
 
 En esta imagen podemos ver claramente el contorno de los sujetos, además, en la zona de los ojos resalta un intenso color rojo, lo cual nos indica que dicha zona es la más importante para el modelo.
+
+### 2. Perceptrón Multicapa
 
 
 ## **Referencias**
