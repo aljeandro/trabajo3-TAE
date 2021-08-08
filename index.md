@@ -92,6 +92,8 @@ Para el entrenamiento de este modelo, el conjunto de datos fue dividido en dos p
 
 ### 1. Regresión Logística
 
+**F1score**
+
 Para medir el desempeño de este modelo, se utilizó la métrica F1score que se calcula como se muestra en la figura 3:
 
 ![image](/images/ec5.jpg)
@@ -105,6 +107,17 @@ Donde:
 - **Recall** (Sensibilidad): es la razón entre los elementos que el modelo  etiquetó como positivos y que en realidad lo eran, y todos los elementos positivos; es decir, en nuestro contexto, es el resultadode dividir la cantidad de sujetos que el modelo predijo que tenían gafas y que en realidad sí las tenían entre todos los sujetos que sí tenían gafas (es decir, los que etiquetó que tenían gafas y en relidad sí las tenían más los que etiquetó como que no tenían gafas pero que en realidad sí las tenían); en otras palabras, dice qué tan bueno es el modelo para detectar a los sujetos que sí tienen gafas de sol de entre todos los que en realidad sí las estaban usando.
 
 **F1score Regresión Logística = 0.78**
+
+**Matriz de Confusión**
+
+La matriz de confusión es una herramienta que nos ayuda a saber cómo está clasificando el modelo respecto a las diferentes clases o categorías de clasificación; más específicamente, no ayuda a saber si el modelo está confundiendo a una clase con otra.
+
+La matriz de confusión obtenida en la regresión logística se muestra en la figura 4.
+
+![image](/images/Matriz1.jpg)
+
+Figura 4. Matriz de Confusión de la Regresión Logística.
+
 
 
 
