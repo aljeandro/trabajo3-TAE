@@ -1,3 +1,6 @@
+
+# **Trabajo 3 Técnicas en Aprendizaje Estadístico** 
+
 ## **Introducción** 
 
 En el área de la inteligencia artificial y la estadística los problemas de clasificación son muy comúnes, incluso más que los de regresión. En estos se busca determinar a qué clase o categoría pertenece un individuo dadas ciertas características de este.
@@ -59,7 +62,7 @@ Para el entrenamiento de este modelo, el conjunto de datos fue dividido en dos p
 - **Entrenamiento**: este conjunto se utiliza para enseñarle al modelo a hacer las predicciones, para ello se destina el 80 %, es decir, 502 imágenes.
 - **Test**: Este conjunto se utiliza para conocer el desempeño real que tiene el modelo, para ello se destina el 20 %, es decir, 126 imágenes.
 
-### 2. Perceptron Multicapa
+### 2. Perceptrón Multicapa
 
 El perceptrón multicapa es una red neuronal artificial formada por múltiples capas, de tal manera que tiene la capacidad para resolver problemas que no son linealmente separables [1].
 
