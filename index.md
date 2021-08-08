@@ -1,5 +1,9 @@
 
-# **Trabajo 3 Técnicas en Aprendizaje Estadístico** 
+# **Trabajo 3 Técnicas en Aprendizaje Estadístico**
+
+# **Integrantes**
+
+- **Alejandro Ortiz Mejía**
 
 ## **Introducción** 
 
