@@ -104,7 +104,7 @@ Para el entrenamiento de este modelo, el conjunto de datos fue dividido en dos p
 **Funcionamiento** 
 
 La ciencia detrás del funcionamiento del Perceptrón Multicapa es muy similar a la descrita en la Regresión Logística, con la excepción de que en la fase de entrenamiento del Perceptrón Multicapa se agregaron elementos como el entrenamiento por *mini - batches* lo cual permite entrenar la red más rápidamente; además, se agregó un solucionador denominado *adam* el cual ayuda a que la función de costo no se quede "atascada" en mínimos locales ni puntos de "silla"; también se aplicó una técnica para evitar el sobreajuste a los datos llamada "interrupción anticipada", el cual detiene el entrenamiento de la red cuando el desempeño en el conjunto de validación deja de mejorar.
-Cuando la fase de entrenamiento termina, los parametros son guardados y el modelo está listo para realizar predicciones.
+Cuando la fase de entrenamiento termina, los parametros que hacen que se minimice el costo son guardados y el modelo está listo para ser testeado y realizar predicciones.
 
 
 ## **Resultados**
