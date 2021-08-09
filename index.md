@@ -50,7 +50,7 @@ Por otro lado, al ser aprendizaje supervisado, es necesario obtener un vector co
   
   Por último, se normalizan las imágenes, dividiendo cada entrada de cada imagen entre la norma euclidiana de sus componentes.
 
-## Elección y Configuración del Modelo
+## Elección, Funcionamiento y Configuración del Modelo
 
 En este trabajo se probaron dos tipos distintos de modelos de clasificación, con el fin de determinar cuál de los dos ofrece un mejor desempeño:
 
