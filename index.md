@@ -81,7 +81,9 @@ En esta red cada neurona (excepto las de entrada) realiza calculos con las entra
 El perceptron multicapa tiene 3 tipos de capas:
 
 - Capa de entrada: Constituida por aquellas neuronas que introducen los patrones de entrada en la red. En estas neuronas no se produce procesamiento [1].
+
 - Capas ocultas: Formada por aquellas neuronas cuyas entradas provienen de capas anteriores y cuyas salidas pasan a neuronas de capas posteriores [1].
+
 - Capa de salida: Neuronas cuyos valores de salida se corresponden con las salidas de toda la red [1].
 
 ![image](/images/RedNeuronalArtificial.png)
