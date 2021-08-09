@@ -193,7 +193,7 @@ Figura 8. Demostración de funcionamiento del Perceptrón Multicapa.
 
 ## **Conclusiones**
 
-En el área de la inteligencia artifical existen muchos modelos diferentes que pueden ser aplicables a un mismo problema, y este no es la excepción. Por tanto, cuando se tiene este gran abanico de opciones, una de las habilidades más importantes del investigador es saber qué modelo se ajusta más a sus necesidades y saber, por supuesto, cómo configurar sus hiperparámetros para que su desempeño sea óptimo.
+En el área de la inteligencia artifical existen muchos modelos diferentes que pueden ser aplicables a un mismo problema, y este no es la excepción. Por tanto, cuando se tiene este gran abanico de opciones, unas de las habilidades más importantes del investigador es saber qué modelo se ajusta más a sus necesidades y saber, por supuesto, cómo configurar sus hiperparámetros para que su desempeño sea óptimo.
 
 Durante este informe se mostró el funcionamiento y desempeño de dos modelos de clasificación binaria. El primero de ellos, la Regresión Logística, aunque tenía un desempeño aceptable, se quedaba bastante atrás a comparación de su contraparte, el Perceptrón Multicapa. ¿Qué pudo estar sucediendo?, como se mencionó anteriormente, la Regresión Logística funciona muy bien cuando las categorías de clasificación están separadas por un hiperplano, lo cual puede significar una limitación para este problema, ya que, por otro lado, el Perceptrón Multicapa tiene una mayor flexibilidad, lo cual le permite resolver problemas que no son linealmente separables, que, en consecuencia, le podría estar significando esa diferencia en el desempeño.
 
