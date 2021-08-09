@@ -140,7 +140,7 @@ En esta imagen podemos ver claramente el contorno de los sujetos, además, en la
 
 En la figura 6 se observa varias pruebas de funcionamiento de la Regresión Logística con la respectiva predicción en la parte superior de cada imagen. De estas pruebas, falló solamente en una, ubicada en la parte superior derecha, en la cual predijo que el sujeto estaba usando gafas de sol cuando en realidad solo tenía gafas normales; es posible que la pata de las gafas hayan afectado la predicción.
 
-![image](/images/Regresión.jpg)
+![image](/images/Regresion.jpg)
 
 Figura 6. Demostración de funcionamiento de la Regresión Logística.
 
