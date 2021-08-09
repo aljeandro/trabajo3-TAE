@@ -69,8 +69,6 @@ Para el entrenamiento de este modelo, el conjunto de datos fue dividido en dos p
 
   - **Test**: Este conjunto se utiliza para conocer el desempeño real que tiene el modelo, para ello se destina el 20 %, es decir, 126 imágenes.
 
-**Funcionamiento** 
-
 Para el entrenamiento del modelo, se utiliza una función de costo, la cual le indica al modelo qué tanto ha aprendido del conjunto de entrenamiento, esta función está en términos de los parámetros y las características de entrada que en este caso son los pixeles de las imágenes. El principal objetivo es minimizar dicha función, ya que cuanto menor es su valor, menos errores está cometiendo en la predicción; sin embargo, es importante evitar el sobreajuste a los datos de entrenamiento, para ello se utiliza una técnica llamada regularización. Para llevar a cabo la minimización de la función de costo, se utiliza una técnica llamada "descenso del gradiente" el cual consiste básicamente en actualizar los parámetros del modelo en cada iteración sobre el conjunto de entrenamiento. Finalmente, cuando la función de costo deja de disminuir, el entrenamiento se detiene y se guarda el valor de los parámetros que hicieron que la función de costo se minimizara.
 Finalizada la etapa de entrenamiento, el modelo está listo para ser testeado para conocer su desempeño en "condiciones reales", para posteriormente comenzar a realizar las predicciones.
 
@@ -93,17 +91,18 @@ Figura 2. Perceptrón Multicapa [1].
 En este caso, el perceptrón multicapa se construyó con la siguiente arquitectura:
 
 - **Capa de entrada**: por medio de esta se ingresa la información de la imagen, por tanto, está constituida por 15360 neuronas (120 * 128 tomando un solo canal).
+
 - **Capas ocultas**: mediante un ejercicio de ensayo y error, se logró determinar que 2 capas ocultas mostraban un buen desempeño; la primera capa oculta contiene 20 neuronas, y la segunda contiene 5.
+
 - **Capa de salida**: Dado que nos encontramos en un problema de clasificación binaria, la capa de salida únicamente tiene 1 neurona.
 
 Para el entrenamiento de este modelo, el conjunto de datos fue dividido en dos partes así:
 
 - **Entrenamiento**: se destinó el 60 %, es decir, 376 imágenes.
+- 
 - **Validación**: este conjunto se utilizó para reajustar los hiperparámetros y para hacer la interrupción anticipada del entrenamiento, con el fin de evitar el sobreajuste; para ello se destinó el 20 % de las imágenes, es decir, 126 imágenes.
 
 - **Test**: se destinó el 20 %, es decir, 126 imágenes.
-
-**Funcionamiento** 
 
 La ciencia detrás de la fase de entrenamiento del Perceptrón Multicapa es muy similar a la descrita en la Regresión Logística, con la excepción de que en la fase de entrenamiento del Perceptrón Multicapa se agregaron elementos como el entrenamiento por *mini - batches* lo cual permite entrenar la red más rápidamente; además, se agregó un solucionador denominado *adam* el cual ayuda a que la función de costo no se quede "atascada" en mínimos locales ni puntos de "silla"; también se aplicó una técnica para evitar el sobreajuste a los datos llamada "interrupción anticipada", el cual detiene el entrenamiento de la red cuando el desempeño en el conjunto de validación deja de mejorar.
 Cuando la fase de entrenamiento termina, los parametros que hacen que se minimice el costo son guardados y el modelo está listo para ser testeado y realizar predicciones.
