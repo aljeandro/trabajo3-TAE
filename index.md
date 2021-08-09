@@ -171,6 +171,8 @@ Como se observa, todas las imágenes fueron etiquetadas correctamente.
 
 ![image](/images/Perceptron.jpg)
 
+Figura 8. Demostración de funcionamiento del Perceptrón Multicapa.
+
 ## **Conclusiones**
 
 En el área de la inteligencia artifical existen muchos modelos diferentes que pueden ser aplicables a un mismo problema, y este no es la excepción. Por tanto, cuando se tiene este gran abanico de opciones, una de las habilidades más importantes del investigador es saber qué modelo se ajusta más a sus necesidades y saber, por supuesto, cómo configurar sus hiperparámetros para que su desempeño sea óptimo.
