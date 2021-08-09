@@ -142,7 +142,7 @@ La matriz de confusión obtenida en la regresión logística se muestra en la fi
 
 Figura 4. Matriz de Confusión de la Regresión Logística.
 
-A partir de esta matriz, se puede decir que está clasificando relativamente bien a los sujetos que **no** están usando gafas de sol; sin embargo, está confundiendo a muchos sujetos (el 23 %) que usan gafas de sol con los que no las usan. Esto puede estar sucediendo debido a las diferentes posiciones de las cabezas de los sujetos, lo cual puede suponer una dificultad para el modelo.
+A partir de esta matriz, se puede decir que está clasificando relativamente bien a los sujetos que **no** están usando gafas de sol; sin embargo, está confundiendo a muchos sujetos (el 23 %) que usan gafas de sol con los que no las usan. Esto puede estar sucediendo debido a las diferentes posiciones de las cabezas de los sujetos y a que hay algunos sujetos que en las imágenes donde no usan gafas de sol sí utilizan gafas normales, lo cual puede suponer una dificultad para el modelo.
 
 - **¿Qué está aprendiendo el modelo?**
 
