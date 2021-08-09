@@ -101,7 +101,7 @@ En este caso, el perceptrón multicapa se construyó con la siguiente arquitectu
 Para el entrenamiento de este modelo, el conjunto de datos fue dividido en dos partes así:
 
 - **Entrenamiento**: se destinó el 60 %, es decir, 376 imágenes.
-- 
+
 - **Validación**: este conjunto se utilizó para reajustar los hiperparámetros y para hacer la interrupción anticipada del entrenamiento, con el fin de evitar el sobreajuste; para ello se destinó el 20 % de las imágenes, es decir, 126 imágenes.
 
 - **Test**: se destinó el 20 %, es decir, 126 imágenes.
