@@ -152,7 +152,7 @@ Al igual que con el modelo de Regresión Logística, con el Perceptrón Multicap
 
 **F1score Perceptrón Multicapa = 0.96**
 
-Este resultado nos muestra un desempeño muy bueno, lo cual quiere decir que este modelo es tanto preciso como sensible, como se podrá comprobar en la matriz de confusión a continuación.
+Este resultado nos muestra un desempeño muy bueno, lo cual quiere decir que este modelo es tanto preciso como sensible, como se podrá comprobar en la matriz de confusión a continuación. Sin embargo, es preciso decir que en pruebas anteriores, el puntaje obtenido en el F1score oscilaba entre 0.85 y 0.95, esta variabilidad podría deberse a la inicialización aleatoria de los parámetros del modelo, a la división aleatoria del conjunto de datos entre los conjuntos de entrenamiento, validación y test, y a que el número de imágenes en el conjunto de datos es relativamente baja. Por lo tanto, es posible que el desempeño real del modelo en términos del F1score sea menor a 0.96.
 
 - **Matriz de Confusión**
 
