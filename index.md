@@ -156,13 +156,20 @@ Este resultado nos muestra un desempeño muy bueno, lo cual quiere decir que est
 
 - **Matriz de Confusión**
 
-La matriz de confusión obtenida en el Perceptrón Multicapa se muestra en la figura 6.
+La matriz de confusión obtenida en el Perceptrón Multicapa se muestra en la figura 7.
 
 ![image](/images/Matriz2.jpg)
 
-Figura 6. Matriz de Confusión del Perceptrón Multicapa.
+Figura 7. Matriz de Confusión del Perceptrón Multicapa.
 
 A partir de esta matriz, se puede decir que está clasificando relativamente bien tanto a los sujetos que **sí** están usando gafas como a los que **no** lo hacen, ya que de aquellos sujetos que en realidad no usan gafas solo está clasificando a 3 de ellos incorrectamente (es decir, el 6 %); similarmente, de aquellos sujetos que sí utilizan gafas de sol solo está clasificando mal a 3 de ellos (es decir, el 4 %).
+
+- **Demostración de funcionamiento**
+
+En la figura 8 se observa varias pruebas de funcionamiento del Perceptrón Multicapa con la respectiva predicción en la parte superior de cada imagen. En este caso, las imágenes de esta demostración son las mismas que las usadas en la Regresión Logística. 
+Como se observa, todas las imágenes fueron etiquetadas correctamente.
+
+![image](/images/Perceptron.jpg)
 
 ## **Conclusiones**
 
