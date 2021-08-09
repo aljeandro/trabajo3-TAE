@@ -78,6 +78,8 @@ Finalizada la etapa de entrenamiento, el modelo está listo para ser testeado pa
 
 El perceptrón multicapa es una red neuronal artificial formada por múltiples capas, de tal manera que tiene la capacidad para resolver problemas que no son linealmente separables [1].
 
+En esta red cada neurona (excepto las de entrada) realiza calculos con las entradas que recibió de la capa de neuronas anterior a ella, dichos calculos incluye la aplicación de una función de activación, que en este caso es la función *relu*; posteriormente, el resultado de una neurona es enviado a la siguiente capa en la cual se repite el mismo procedimiento hasta llegar a la capa de salida donde se realizan los últimos calculos para finalmente entregar la predicción. La arquitectura del Perceptrón Multicapa (ver figura 2) le permite aprender los diferentes patrones que hay en las imágenes.
+
 El perceptron multicapa tiene 3 tipos de capas:
 
 - Capa de entrada: Constituida por aquellas neuronas que introducen los patrones de entrada en la red. En estas neuronas no se produce procesamiento [1].
@@ -103,7 +105,7 @@ Para el entrenamiento de este modelo, el conjunto de datos fue dividido en dos p
 
 **Funcionamiento** 
 
-La ciencia detrás del funcionamiento del Perceptrón Multicapa es muy similar a la descrita en la Regresión Logística, con la excepción de que en la fase de entrenamiento del Perceptrón Multicapa se agregaron elementos como el entrenamiento por *mini - batches* lo cual permite entrenar la red más rápidamente; además, se agregó un solucionador denominado *adam* el cual ayuda a que la función de costo no se quede "atascada" en mínimos locales ni puntos de "silla"; también se aplicó una técnica para evitar el sobreajuste a los datos llamada "interrupción anticipada", el cual detiene el entrenamiento de la red cuando el desempeño en el conjunto de validación deja de mejorar.
+La ciencia detrás de la fase de entrenamiento del Perceptrón Multicapa es muy similar a la descrita en la Regresión Logística, con la excepción de que en la fase de entrenamiento del Perceptrón Multicapa se agregaron elementos como el entrenamiento por *mini - batches* lo cual permite entrenar la red más rápidamente; además, se agregó un solucionador denominado *adam* el cual ayuda a que la función de costo no se quede "atascada" en mínimos locales ni puntos de "silla"; también se aplicó una técnica para evitar el sobreajuste a los datos llamada "interrupción anticipada", el cual detiene el entrenamiento de la red cuando el desempeño en el conjunto de validación deja de mejorar.
 Cuando la fase de entrenamiento termina, los parametros que hacen que se minimice el costo son guardados y el modelo está listo para ser testeado y realizar predicciones.
 
 
