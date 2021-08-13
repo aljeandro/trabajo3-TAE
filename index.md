@@ -98,7 +98,7 @@ En este caso, el perceptrón multicapa se construyó con la siguiente arquitectu
 
 - **Capa de salida**: Dado que nos encontramos en un problema de clasificación binaria, la capa de salida únicamente tiene 1 neurona.
 
-Para el entrenamiento de este modelo, el conjunto de datos fue dividido en dos partes así:
+Para el entrenamiento de este modelo, el conjunto de datos fue dividido en tres partes así:
 
 - **Entrenamiento**: se destinó el 60 %, es decir, 376 imágenes.
 
