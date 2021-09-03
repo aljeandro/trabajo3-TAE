@@ -174,28 +174,35 @@ Figura 7. Demostración de funcionamiento de la Regresión Logística.
 
 Al igual que con el modelo de Regresión Logística, con el Perceptrón Multicapa también se utilizó la métrica del F1score explicada anteriormente.
 
-**F1score Perceptrón Multicapa = 0.96**
+**F1score en entrenamiento del Perceptrón Multicapa = 0.98**
+**F1score en test del Perceptrón Multicapa = 0.96**
 
 Este resultado nos muestra un desempeño muy bueno, lo cual quiere decir que este modelo es tanto preciso como sensible, como se podrá comprobar en la matriz de confusión a continuación. Sin embargo, es preciso decir que en pruebas anteriores, el puntaje obtenido en el F1score oscilaba entre 0.85 y 0.95, esta variabilidad podría deberse a la inicialización aleatoria de los parámetros del modelo, a la división aleatoria del conjunto de datos entre los conjuntos de entrenamiento, validación y test, y a que el número de imágenes en el conjunto de datos es relativamente baja. Por lo tanto, es posible que el desempeño real del modelo en términos del F1score sea menor a 0.96.
 
 - **Matriz de Confusión**
 
-La matriz de confusión obtenida en el Perceptrón Multicapa se muestra en la figura 8.
+La matriz de confusión obtenida en el Perceptrón Multicapa en entrenamiento se muestra en la figura 8.
+
+![image](/images/matriz_PM_train.jpg)
+
+Figura 8. Matriz de Confusión en entrenamiento del Perceptrón Multicapa.
+
+La matriz de confusión obtenida en el Perceptrón Multicapa en test se muestra en la figura 9.
 
 ![image](/images/Matriz2.jpg)
 
-Figura 8. Matriz de Confusión del Perceptrón Multicapa.
+Figura 9. Matriz de Confusión en test del Perceptrón Multicapa.
 
 A partir de esta matriz, se puede decir que está clasificando relativamente bien tanto a los sujetos que **sí** están usando gafas como a los que **no** lo hacen, ya que de aquellos sujetos que en realidad no usan gafas de sol solo está clasificando a 3 de ellos incorrectamente (es decir, el 6 %); similarmente, de aquellos sujetos que sí utilizan gafas de sol solo está clasificando mal a 3 de ellos (es decir, el 4 %).
 
 - **Demostración de funcionamiento**
 
-En la figura 9 se observa varias pruebas de funcionamiento del Perceptrón Multicapa con la respectiva predicción en la parte superior de cada imagen. En este caso, las imágenes de esta demostración son las mismas que las usadas en la Regresión Logística. 
+En la figura 10 se observa varias pruebas de funcionamiento del Perceptrón Multicapa con la respectiva predicción en la parte superior de cada imagen. En este caso, las imágenes de esta demostración son las mismas que las usadas en la Regresión Logística. 
 Como se observa, todas las imágenes fueron etiquetadas correctamente.
 
 ![image](/images/Perceptron.jpg)
 
-Figura 9. Demostración de funcionamiento del Perceptrón Multicapa.
+Figura 10. Demostración de funcionamiento del Perceptrón Multicapa.
 
 ## **Conclusiones**
 
