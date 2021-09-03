@@ -43,7 +43,7 @@ Debido a un error en la cámara con la que se tomaron las fotografías, 12 de la
   
   Como se mencionó anteriormente, todas las imágenes están en escala de grises, eso quiere decir que en su representación como matriz, en los 3 canales (R, G, B) tendrán el mismo valor, por lo tanto, para evitar la redundancia de información y optimizar el modelo, solamente se tomará la información de uno de los canales.
 
-Posteriormente, la matriz que representa a cada imagen se "aplana" con el fin de que quede en dimensión 1.
+Posteriormente, la matriz que representa a cada imagen se "aplana" con el fin de que quede en dimensión (15360, 1).
 
 Por otro lado, al ser aprendizaje supervisado, es necesario obtener un vector con la variable respuesta, para ello se utiliza la información contenida en el nombre de cada imagen, así que si el nombre de la imagen contiene la palabra *sunglasses*, entonces su respectiva etiqueta será 1, de lo contrario será 0.
   
