@@ -129,6 +129,7 @@ Donde:
 - **Recall** (Sensibilidad): es la razón entre los elementos que el modelo  etiquetó como positivos y que en realidad lo eran, y todos los elementos positivos; es decir, en nuestro contexto, es el resultado de dividir la cantidad de sujetos que el modelo predijo que tenían gafas de sol y que en realidad sí las tenían entre todos los sujetos que sí tenían gafas de sol (es decir, los que etiquetó que tenían gafas de sol y en relidad sí las tenían más los que etiquetó como que no tenían gafas de sol pero que en realidad sí las tenían); en otras palabras, dice qué tan bueno es el modelo para detectar a los sujetos que sí tienen gafas de sol de entre todos los que en realidad sí las estaban usando.
 
 **F1score en entrenamiento Regresión Logística = 0.79**
+
 **F1score en test Regresión Logística = 0.78**
 
 Este resultado nos muestra un desempeño aceptable, aunque con algunas falencias.
@@ -140,6 +141,7 @@ La matriz de confusión es una herramienta que nos ayuda a saber cómo está cla
 La matriz de confusión obtenida en entrenamiento en la regresión logística se muestra en la figura 4.
 
 ![image](/images/matriz_LR_train.png)
+
 Figura 4. Matriz de Confusión de la Regresión Logística.
 
 La matriz de confusión obtenida en test en la regresión logística se muestra en la figura 5.
@@ -175,6 +177,7 @@ Figura 7. Demostración de funcionamiento de la Regresión Logística.
 Al igual que con el modelo de Regresión Logística, con el Perceptrón Multicapa también se utilizó la métrica del F1score explicada anteriormente.
 
 **F1score en entrenamiento del Perceptrón Multicapa = 0.98**
+
 **F1score en test del Perceptrón Multicapa = 0.96**
 
 Este resultado nos muestra un desempeño muy bueno, lo cual quiere decir que este modelo es tanto preciso como sensible, como se podrá comprobar en la matriz de confusión a continuación. Sin embargo, es preciso decir que en pruebas anteriores, el puntaje obtenido en el F1score oscilaba entre 0.85 y 0.95, esta variabilidad podría deberse a la inicialización aleatoria de los parámetros del modelo, a la división aleatoria del conjunto de datos entre los conjuntos de entrenamiento, validación y test, y a que el número de imágenes en el conjunto de datos es relativamente baja. Por lo tanto, es posible que el desempeño real del modelo en términos del F1score sea menor a 0.96.
@@ -183,7 +186,7 @@ Este resultado nos muestra un desempeño muy bueno, lo cual quiere decir que est
 
 La matriz de confusión obtenida en el Perceptrón Multicapa en entrenamiento se muestra en la figura 8.
 
-![image](/images/matriz_PM_train.jpg)
+![image](/images/matriz_PM_train.png)
 
 Figura 8. Matriz de Confusión en entrenamiento del Perceptrón Multicapa.
 
