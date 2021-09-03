@@ -54,9 +54,9 @@ Por otro lado, al ser aprendizaje supervisado, es necesario obtener un vector co
 
 En este trabajo se probaron dos tipos distintos de modelos de clasificación, con el fin de determinar cuál de los dos ofrece un mejor desempeño:
 
-### 1. Regresión Logística
+### 1. Regresión Logística con Regularización
 
-La regresión logística (ver Figura 1) es un modelo que permite hacer predicciones desde una perspectiva probabilística, es decir, la respuesta siempre estará dada por un número entre 0 y 1, lo cual resulta útil para hacer clasificaciones. Sin embargo, su desempeño es alto solo si las clases o categorías de clasificación están separadas por un hiperplano, debido a su naturaleza lineal.
+La regresión logística con regularización (ver Figura 1) es un modelo que permite hacer predicciones desde una perspectiva probabilística, es decir, la respuesta siempre estará dada por un número entre 0 y 1, lo cual resulta útil para hacer clasificaciones. Sin embargo, su desempeño es alto solo si las clases o categorías de clasificación están separadas por un hiperplano, debido a su naturaleza lineal. Adicionalmente, la regularización es una técnica que evita que el modelo se sobreajuste a los datos de entrenamiento, evitando que el modelo capture el ruido del conjunto de datos [2], permitiendo así que el modelo generalice mejor. La técnica de regularización en este problema se llama Regularización L2. 
 
 ![image](/images/ec4.jpg)         
   Figura 1. Regresión Logística.
@@ -74,21 +74,21 @@ Finalizada la etapa de entrenamiento, el modelo está listo para ser testeado pa
 
 ### 2. Perceptrón Multicapa
 
-El perceptrón multicapa es una red neuronal artificial formada por múltiples capas, de tal manera que tiene la capacidad para resolver problemas que no son linealmente separables [2].
+El perceptrón multicapa es una red neuronal artificial formada por múltiples capas, de tal manera que tiene la capacidad para resolver problemas que no son linealmente separables [3].
 
 En esta red cada neurona (excepto las de entrada) realiza calculos con las entradas que recibió de la capa de neuronas anterior a ella, dichos calculos incluye la aplicación de una función de activación, que en este caso es la función *relu*; posteriormente, el resultado de una neurona es enviado a la siguiente capa en la cual se repite el mismo procedimiento hasta llegar a la capa de salida donde se realizan los últimos calculos para finalmente entregar la predicción. La arquitectura del Perceptrón Multicapa (ver figura 2) le permite aprender los diferentes patrones que hay en las imágenes.
 
 El perceptron multicapa tiene 3 tipos de capas:
 
-- Capa de entrada: Constituida por aquellas neuronas que introducen los patrones de entrada en la red. En estas neuronas no se produce procesamiento [2].
+- Capa de entrada: Constituida por aquellas neuronas que introducen los patrones de entrada en la red. En estas neuronas no se produce procesamiento [3].
 
-- Capas ocultas: Formada por aquellas neuronas cuyas entradas provienen de capas anteriores y cuyas salidas pasan a neuronas de capas posteriores [2].
+- Capas ocultas: Formada por aquellas neuronas cuyas entradas provienen de capas anteriores y cuyas salidas pasan a neuronas de capas posteriores [3].
 
-- Capa de salida: Neuronas cuyos valores de salida se corresponden con las salidas de toda la red [2].
+- Capa de salida: Neuronas cuyos valores de salida se corresponden con las salidas de toda la red [3].
 
 ![image](/images/RedNeuronalArtificial.png)
 
-Figura 2. Perceptrón Multicapa [1].
+Figura 2. Perceptrón Multicapa [3].
 
 En este caso, el perceptrón multicapa se construyó con la siguiente arquitectura:
 
@@ -202,7 +202,10 @@ Durante este informe se mostró el funcionamiento y desempeño de dos modelos de
 
 [1] G. James, D. Witten, T. Hastie y R. Tibshirani, *An Introduction to Statistical Learning With Applications in R*, 2a ed. New York, NY: Springer, 2021.
 
-[2] Colaboradores de los proyectos Wikimedia. "Perceptrón multicapa - Wikipedia, la enciclopedia libre". Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Perceptrón_multicapa (accedido el 7 de agosto de 2021).
+[2]P. Gupta. "Regularization in Machine Learning". Medium. https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a (accedido el 3 de septiembre de 2021).
+
+[3] Colaboradores de los proyectos Wikimedia. "Perceptrón multicapa - Wikipedia, la enciclopedia libre". Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Perceptrón_multicapa (accedido el 7 de agosto de 2021).
+
 
 
 
