@@ -128,7 +128,8 @@ Donde:
 
 - **Recall** (Sensibilidad): es la razón entre los elementos que el modelo  etiquetó como positivos y que en realidad lo eran, y todos los elementos positivos; es decir, en nuestro contexto, es el resultado de dividir la cantidad de sujetos que el modelo predijo que tenían gafas de sol y que en realidad sí las tenían entre todos los sujetos que sí tenían gafas de sol (es decir, los que etiquetó que tenían gafas de sol y en relidad sí las tenían más los que etiquetó como que no tenían gafas de sol pero que en realidad sí las tenían); en otras palabras, dice qué tan bueno es el modelo para detectar a los sujetos que sí tienen gafas de sol de entre todos los que en realidad sí las estaban usando.
 
-**F1score Regresión Logística = 0.78**
+**F1score en entrenamiento Regresión Logística = 0.79**
+**F1score en test Regresión Logística = 0.78**
 
 Este resultado nos muestra un desempeño aceptable, aunque con algunas falencias.
 
@@ -136,31 +137,36 @@ Este resultado nos muestra un desempeño aceptable, aunque con algunas falencias
 
 La matriz de confusión es una herramienta que nos ayuda a saber cómo está clasificando el modelo respecto a las diferentes clases o categorías de clasificación; más específicamente, nos ayuda a saber si el modelo está confundiendo a una clase con otra.
 
-La matriz de confusión obtenida en la regresión logística se muestra en la figura 4.
+La matriz de confusión obtenida en entrenamiento en la regresión logística se muestra en la figura 4.
+
+![image](/images/matriz_LR_train.png)
+Figura 4. Matriz de Confusión de la Regresión Logística.
+
+La matriz de confusión obtenida en test en la regresión logística se muestra en la figura 5.
 
 ![image](/images/Matriz1.jpg)
 
-Figura 4. Matriz de Confusión de la Regresión Logística.
+Figura 5. Matriz de Confusión de la Regresión Logística en test.
 
 A partir de esta matriz, se puede decir que está clasificando relativamente bien a los sujetos que **no** están usando gafas de sol; sin embargo, está confundiendo a muchos sujetos (el 23 %) que usan gafas de sol con los que no las usan. Esto puede estar sucediendo debido a las diferentes posiciones de las cabezas de los sujetos y a que hay algunos sujetos que en las imágenes donde no usan gafas de sol sí utilizan gafas normales, lo cual puede suponer una dificultad para el modelo.
 
 - **¿Qué está aprendiendo el modelo?**
 
-Por medio de la figura 5 podemos ver gráficamente los coeficientes aprendidos por la regresión logística.
+Por medio de la figura 6 podemos ver gráficamente los coeficientes aprendidos por la regresión logística.
 
 ![image](/images/coef.jpg)
 
-Figura 5. Coeficientes aprendidos por la Regresión Logística; colores más intensos representan coeficientes más grandes en magnitud, es decir, más importantes.
+Figura 6. Coeficientes aprendidos por la Regresión Logística; colores más intensos representan coeficientes más grandes en magnitud, es decir, más importantes.
 
 En esta imagen podemos ver claramente el contorno de los sujetos, además, en la zona de los ojos resalta un intenso color rojo, lo cual nos indica que dicha zona es la más importante para el modelo.
 
 - **Demostración de funcionamiento**
 
-En la figura 6 se observa varias pruebas de funcionamiento de la Regresión Logística con la respectiva predicción en la parte superior de cada imagen. De estas pruebas, falló solamente en una, ubicada en la parte superior derecha, en la cual predijo que el sujeto estaba usando gafas de sol cuando en realidad solo tenía gafas normales; es posible que la pata de las gafas hayan afectado la predicción.
+En la figura 7 se observa varias pruebas de funcionamiento de la Regresión Logística con la respectiva predicción en la parte superior de cada imagen. De estas pruebas, falló solamente en una, ubicada en la parte superior derecha, en la cual predijo que el sujeto estaba usando gafas de sol cuando en realidad solo tenía gafas normales; es posible que la pata de las gafas hayan afectado la predicción.
 
 ![image](/images/Regresion.jpg)
 
-Figura 6. Demostración de funcionamiento de la Regresión Logística.
+Figura 7. Demostración de funcionamiento de la Regresión Logística.
 
 ### 2. Perceptrón Multicapa
 
@@ -174,22 +180,22 @@ Este resultado nos muestra un desempeño muy bueno, lo cual quiere decir que est
 
 - **Matriz de Confusión**
 
-La matriz de confusión obtenida en el Perceptrón Multicapa se muestra en la figura 7.
+La matriz de confusión obtenida en el Perceptrón Multicapa se muestra en la figura 8.
 
 ![image](/images/Matriz2.jpg)
 
-Figura 7. Matriz de Confusión del Perceptrón Multicapa.
+Figura 8. Matriz de Confusión del Perceptrón Multicapa.
 
 A partir de esta matriz, se puede decir que está clasificando relativamente bien tanto a los sujetos que **sí** están usando gafas como a los que **no** lo hacen, ya que de aquellos sujetos que en realidad no usan gafas de sol solo está clasificando a 3 de ellos incorrectamente (es decir, el 6 %); similarmente, de aquellos sujetos que sí utilizan gafas de sol solo está clasificando mal a 3 de ellos (es decir, el 4 %).
 
 - **Demostración de funcionamiento**
 
-En la figura 8 se observa varias pruebas de funcionamiento del Perceptrón Multicapa con la respectiva predicción en la parte superior de cada imagen. En este caso, las imágenes de esta demostración son las mismas que las usadas en la Regresión Logística. 
+En la figura 9 se observa varias pruebas de funcionamiento del Perceptrón Multicapa con la respectiva predicción en la parte superior de cada imagen. En este caso, las imágenes de esta demostración son las mismas que las usadas en la Regresión Logística. 
 Como se observa, todas las imágenes fueron etiquetadas correctamente.
 
 ![image](/images/Perceptron.jpg)
 
-Figura 8. Demostración de funcionamiento del Perceptrón Multicapa.
+Figura 9. Demostración de funcionamiento del Perceptrón Multicapa.
 
 ## **Conclusiones**
 
