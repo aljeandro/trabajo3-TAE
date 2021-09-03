@@ -7,7 +7,7 @@
 
 ## **Introducción** 
 
-En el área de la inteligencia artificial y la estadística los problemas de clasificación son muy comúnes, incluso más que los de regresión. En estos se busca determinar a qué clase o categoría pertenece un individuo dadas ciertas características de este.
+En el área de la inteligencia artificial y la estadística los problemas de clasificación son muy comúnes, quizás incluso más que los de regresión [1]. En estos se busca determinar a qué clase o categoría pertenece un individuo dadas ciertas características de este.
 
 A menudo los individuos que requieren ser clasificados son imágenes; por ejemplo, en el área de la agronomía resulta útil saber si un fruto esta maduro o no, o, en el contexto de la pandemia del covid-19, podría ser de mucha ayuda reconocer cuándo una persona no está utilizando tapabocas por medio de una cámara de seguridad, todo esto sin la supervisión permanente de un humano.
 
@@ -74,17 +74,17 @@ Finalizada la etapa de entrenamiento, el modelo está listo para ser testeado pa
 
 ### 2. Perceptrón Multicapa
 
-El perceptrón multicapa es una red neuronal artificial formada por múltiples capas, de tal manera que tiene la capacidad para resolver problemas que no son linealmente separables [1].
+El perceptrón multicapa es una red neuronal artificial formada por múltiples capas, de tal manera que tiene la capacidad para resolver problemas que no son linealmente separables [2].
 
 En esta red cada neurona (excepto las de entrada) realiza calculos con las entradas que recibió de la capa de neuronas anterior a ella, dichos calculos incluye la aplicación de una función de activación, que en este caso es la función *relu*; posteriormente, el resultado de una neurona es enviado a la siguiente capa en la cual se repite el mismo procedimiento hasta llegar a la capa de salida donde se realizan los últimos calculos para finalmente entregar la predicción. La arquitectura del Perceptrón Multicapa (ver figura 2) le permite aprender los diferentes patrones que hay en las imágenes.
 
 El perceptron multicapa tiene 3 tipos de capas:
 
-- Capa de entrada: Constituida por aquellas neuronas que introducen los patrones de entrada en la red. En estas neuronas no se produce procesamiento [1].
+- Capa de entrada: Constituida por aquellas neuronas que introducen los patrones de entrada en la red. En estas neuronas no se produce procesamiento [2].
 
-- Capas ocultas: Formada por aquellas neuronas cuyas entradas provienen de capas anteriores y cuyas salidas pasan a neuronas de capas posteriores [1].
+- Capas ocultas: Formada por aquellas neuronas cuyas entradas provienen de capas anteriores y cuyas salidas pasan a neuronas de capas posteriores [2].
 
-- Capa de salida: Neuronas cuyos valores de salida se corresponden con las salidas de toda la red [1].
+- Capa de salida: Neuronas cuyos valores de salida se corresponden con las salidas de toda la red [2].
 
 ![image](/images/RedNeuronalArtificial.png)
 
@@ -200,7 +200,9 @@ Durante este informe se mostró el funcionamiento y desempeño de dos modelos de
 
 ## **Referencias**
 
-[1] Colaboradores de los proyectos Wikimedia. "Perceptrón multicapa - Wikipedia, la enciclopedia libre". Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Perceptrón_multicapa (accedido el 7 de agosto de 2021).
+[1] G. James, D. Witten, T. Hastie y R. Tibshirani, *An Introduction to Statistical Learning With Applications in R*, 2a ed. New York, NY: Springer, 2021.
+
+[2] Colaboradores de los proyectos Wikimedia. "Perceptrón multicapa - Wikipedia, la enciclopedia libre". Wikipedia, la enciclopedia libre. https://es.wikipedia.org/wiki/Perceptrón_multicapa (accedido el 7 de agosto de 2021).
 
 
 
