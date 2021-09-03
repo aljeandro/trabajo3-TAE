@@ -7,7 +7,7 @@
 
 ## **Introducción** 
 
-En el área de la inteligencia artificial y la estadística los problemas de clasificación son muy comúnes, quizás incluso más que los de regresión [1]. En estos se busca determinar a qué clase o categoría pertenece un individuo dadas ciertas características de este.
+En el área de la inteligencia artificial y la estadística los problemas de clasificación son muy comúnes, quizás incluso más que los de regresión [1, p.130]. En estos se busca determinar a qué clase o categoría pertenece un individuo dadas ciertas características de este.
 
 A menudo los individuos que requieren ser clasificados son imágenes; por ejemplo, en el área de la agronomía resulta útil saber si un fruto esta maduro o no, o, en el contexto de la pandemia del covid-19, podría ser de mucha ayuda reconocer cuándo una persona no está utilizando tapabocas por medio de una cámara de seguridad, todo esto sin la supervisión permanente de un humano.
 
